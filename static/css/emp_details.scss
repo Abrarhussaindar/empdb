@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{ 
+    margin: 2em 5em 1em 5em;
+    .ti{
+        font-size: 1.5em;
+        
+    }
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+
+    .img{
+        border: 2px solid black;
+        height: max-content;
+        border-radius: 30px ;
+        margin-top: 5em;
+        img{
+            width: 45vw;
+            border-radius: 30px;
+            height: 50vh;
+        }
+    }
+}
+.table{
+    margin-left: 5em;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: max-content;
+    height: min-content;
+    padding: .5em;
+
+    table{
+        margin: -.2em;
+ 
+        border: 1px solid black;
+        border-radius: 10px;
+        tr{
+            
+            th{
+                font-size: 15px;
+                font-weight: 700;
+
+                border: 1px solid black;
+                padding: .5em;
+                border-radius: 10px;
+
+
+                .t_h{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.3em;
+                }
+            }
+            td{
+                height: 6vh;
+            
+                border: 1px solid rgb(129, 122, 122);
+                border-radius: 10px;
+                .s_no{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.1em;
+                    font-weight: lighter;
+                    margin: 1em;
+
+                    button{
+                        padding: 1em 2em;
+                        font-size: .9em;
+                        border-radius: 50px;
+                        border: none;
+                        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+
+                        &:hover{
+                            transform: scale(0.99);
+                            background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: .5em;
+    margin: 1em 29em 0 26em;
+    font-size: 15px;
+    text-align: center;
+
+    span {
+        font-weight: 400;
+        color: #000000;
+    }
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Employee Details
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/emp_details.css' %}">
+</head>
+{% load static %}
+
+<body>
+  <div class="title">
+
+      <div class="ti">Employee Details</div>
+
+  </div>
+
+  <div class="main">
+    <div class="table">
+      <table>
+        <tr>
+          <th>
+            <div class="t_h">Employee Name</div>
+          </th>
+          <th>
+            <div class="t_h">Employee ID</div>
+          </th>
+          <th>
+            <div class="t_h">Employee Address</div>
+          </th>
+          <th>
+            <div class="t_h">Employee Adhar Image</div>
+          </th>
+
+        </tr>
+  
+        {% for details in form %}
+        <tr>
+          <td>
+            <div class="s_no">{{details.emp_name}}</div>
+          </td>
+          <td>
+            <div class="s_no">{{details.emp_id}}</div>
+          </td>
+          <td>
+            <div class="s_no">{{details.emp_add}}</div>
+          </td>
+          <td>
+            <div class="s_no"><button> <a href={{details.emp_ad_img.url}} download="employee adhar Image">Download</a></button></div>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+    <div class="img">
+      <img src="{% static 'images/emp_details.png' %}" alt="" />
+    </div>
+  </div>
+
+
+
+      <div class="footer">
+        &#169; 2023 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
+      </div>
+</body>
+</html>

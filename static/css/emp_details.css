@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin: 2em 5em 1em 5em;
+}
+.title .ti {
+  font-size: 1.5em;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.main .img {
+  border: 2px solid black;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 30px;
+  margin-top: 5em;
+}
+.main .img img {
+  width: 45vw;
+  border-radius: 30px;
+  height: 50vh;
+}
+
+.table {
+  margin-left: 5em;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 0.5em;
+}
+.table table {
+  margin: -0.2em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.table table tr th {
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid black;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+.table table tr th .t_h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+}
+.table table tr td {
+  height: 6vh;
+  border: 1px solid rgb(129, 122, 122);
+  border-radius: 10px;
+}
+.table table tr td .s_no {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  margin: 1em;
+}
+.table table tr td .s_no button {
+  padding: 1em 2em;
+  font-size: 0.9em;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.table table tr td .s_no button a {
+  text-decoration: none;
+  color: white;
+}
+.table table tr td .s_no button:hover {
+  transform: scale(0.99);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+.footer {
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 0.5em;
+  margin: 1em 29em 0 26em;
+  font-size: 15px;
+  text-align: center;
+}
+.footer span {
+  font-weight: 400;
+  color: #000000;
+}/*# sourceMappingURL=emp_details.css.map */
