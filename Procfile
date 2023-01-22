@@ -1,1 +1,1 @@
-web: gunicorn empdb.wsgi --log-file-
+web: gunicorn empdb.wsgi --log-file -
