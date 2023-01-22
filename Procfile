@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT db.wsgi:application
+web: gunicorn empdb.wsgi --log-file-
