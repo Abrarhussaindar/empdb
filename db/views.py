@@ -2,10 +2,9 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from .forms import *
 from .models import *
-from django.http import JsonResponse
-import json
+from django.views.decorators.csrf import requires_csrf_token
 
-# Create your views here.
+@requires_csrf_token
 def home_page(request):
     form = emp_form()
     if request.method == 'POST':
