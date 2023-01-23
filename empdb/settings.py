@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'empdb.urls'
-CSRF_TRUSTED_ORIGINS = ['https://empdb-production.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://empdb-production.up.railway.app/',]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

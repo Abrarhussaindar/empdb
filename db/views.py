@@ -19,7 +19,7 @@ def home_page(request):
     }
     return render(request, "home.html", context)
 
-@requires_csrf_token
+# @requires_csrf_token
 def emp_details(request):
     form = Employee.objects.all()
     print(form)
