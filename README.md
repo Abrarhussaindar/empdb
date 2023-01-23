@@ -1,3 +1,3 @@
 # empdb
 
-https://empdb-production.up.railway.app/
+https://web-production-0fad.up.railway.app/
